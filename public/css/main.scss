@@ -1,0 +1,291 @@
+@font-face {
+	font-family: "RobotoBold";
+	src: url("../fonts/RobotoBold/RobotoBold.eot");
+	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	margin: 0;
+	.wrapper {
+		.header {
+			height: 300px;
+			width: 100%;
+			background: url('../images/city300.svg') repeat-x 40% top;
+			margin-top: 10px;
+			position: absolute;
+		}
+		.header__vacancy {
+			position: relative;
+			width: 50%;
+			margin: auto;
+			font-family: RobotoBold;
+			color: #3e3e3e;
+			text-align: center;
+			padding-top: 70px;
+
+			.header__vacancy-name {
+				font-size: 3em;
+				margin-bottom: 10px;
+			}
+
+			.header__vacancy-skills {
+				font-size: 1.5em;
+				margin-bottom: 20px;
+			}
+
+			.header__vacancy-department {
+				font-family: RobotoRegular;
+				font-size: 1.3em;
+			}
+
+		}
+
+		.content {
+			width: 70%;
+			margin: auto;
+			padding-top: 50px;
+			//height: 1200px;
+			.content__vacancy-description {
+				font-family: RobotoRegular;
+				color: #3e3e3e;
+				font-size: 1.4em;
+				.content__vacancy-description_paragraph {
+					margin-bottom: 20px;
+				}
+			}
+
+			.content__vacancy-requirement {
+				margin-top: 10px;
+				width: 100%;
+				.content__vacancy-requirement_nav {
+					font-family: RobotoLight;
+					margin-top: 10px;
+					width: 70%;
+					margin-left: 15%;
+					margin-right: 15%;
+					height: 40px;
+					font-size: 1.6em;
+					display: inline-block;
+					.content__vacancy-requirement_nav-tasks {
+						border-width: 1px;
+						border-style: solid;
+						border-radius: 5px 0 0 5px;
+						border-color: #008eda;
+						background-color: #008eda;
+						color: #fff;
+						text-align: center;
+						float: left;
+						height: 50px;
+						width: 240px;
+						padding-top: 15px;
+					}
+
+					.content__vacancy-requirement_nav-requirements {
+
+						border-width: 1px;
+						border-style: solid;
+						border-radius: 0 5px 5px 0;
+						border-color: #008eda;
+						background-color: #fff;
+						color: #008eda;
+						text-align: center;
+						float: left;
+						height: 50px;
+						width: 240px;
+						padding-top: 15px;
+					}
+				}
+
+				.content__vacancy-requirement-list {
+
+					& ul {
+						padding-top: 30px;
+						list-style-type: disc;
+						color: #008eda;
+						padding-left: 18px;
+						font-size: 1.3em;
+						& li {
+							margin-bottom: 5px;
+							span {
+								color: #3e3e3e;
+
+								line-height: 1.7em;
+							}
+						}
+					}
+
+				}
+			}
+
+		}
+
+		.footer {
+
+		}
+	}
+}
+
+@media all and (max-width: 1050px) {
+	body {
+		background: url('../images/mobile-fon.png');
+		background-repeat: repeat-y;
+
+		.wrapper {
+			height: 1800px;
+			margin: 21px;
+			background: #fff;
+			.header {
+				height: 300px;
+				width: 100%;
+				background: url('../images/city300.svg') repeat-x 40% top;
+				margin-top: 10px;
+				position: absolute;
+			}
+			.header__vacancy {
+				position: relative;
+				top: 240px;
+				width: 80%;
+				margin: auto;
+				font-family: RobotoBold;
+				color: #3e3e3e;
+				text-align: center;
+				padding-top: 70px;
+
+				.header__vacancy-name {
+					font-size: 2em;
+					margin-bottom: 10px;
+				}
+
+				.header__vacancy-skills {
+					font-size: 1.5em;
+					margin-bottom: 20px;
+				}
+
+				.header__vacancy-department {
+					font-family: RobotoRegular;
+					font-size: 1.3em;
+				}
+
+			}
+			.content {
+				width: 90%;
+				margin: auto;
+				padding-top: 40px;
+				position: relative;
+				top: 240px;
+				//height: 1200px;
+				.content__vacancy-description {
+					font-family: RobotoRegular;
+					color: #3e3e3e;
+					font-size: 1.4em;
+					.content__vacancy-description_paragraph {
+						margin-bottom: 20px;
+					}
+				}
+
+				.content__vacancy-requirement {
+					margin-top: 10px;
+					width: 100%;
+					.content__vacancy-requirement_nav {
+						font-family: RobotoLight;
+						margin-top: 10px;
+						width: 90%;
+						margin-left: 5%;
+						margin-right: 5%;
+						height: 40px;
+						font-size: 1.5em;
+						display: inline-block;
+						.content__vacancy-requirement_nav-tasks {
+							border-width: 1px;
+							border-style: solid;
+							border-radius: 5px 0 0 5px;
+							border-color: #008eda;
+							background-color: #008eda;
+							color: #fff;
+							text-align: center;
+							float: left;
+							height: 50px;
+							width: 49%;
+							padding-top: 15px;
+						}
+
+						.content__vacancy-requirement_nav-requirements {
+
+							border-width: 1px;
+							border-style: solid;
+							border-radius: 0 5px 5px 0;
+							border-color: #008eda;
+							background-color: #fff;
+							color: #008eda;
+							text-align: center;
+							float: left;
+							height: 50px;
+							width: 49%;
+							padding-top: 15px;
+						}
+					}
+
+					.content__vacancy-requirement-list {
+
+						& ul {
+							padding-top: 30px;
+							list-style-type: disc;
+							color: #008eda;
+							padding-left: 18px;
+							font-size: 1.3em;
+							& li {
+								margin-bottom: 5px;
+								span {
+									color: #3e3e3e;
+
+									line-height: 1.7em;
+								}
+							}
+						}
+
+					}
+				}
+
+			}
+			.footer {
+
+			}
+		}
+	}
+
+}
+
