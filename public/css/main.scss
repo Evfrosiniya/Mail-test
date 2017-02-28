@@ -43,12 +43,19 @@ body {
 	.wrapper {
 		padding-top: 10px;
 		.header {
-			height: 300px;
+			height: 360px;
 			width: 100%;
 			background: url('../images/city300.svg') repeat-x 40% top;
-
 			position: absolute;
 			background-size: cover;
+			text-align: center;
+
+			img{
+				margin: auto;
+
+					width: 300px;
+					height: 90px;
+			}
 
 		}
 		.header__vacancy {
@@ -59,6 +66,10 @@ body {
 			color: #3e3e3e;
 			text-align: center;
 			padding-top: 70px;
+
+			.header__vacancy-logo {
+
+			}
 
 			.header__vacancy-name {
 				font-size: 3em;
@@ -80,7 +91,7 @@ body {
 		.content {
 			width: 60%;
 			margin: auto;
-			padding-top: 50px;
+			padding-top: 140px;
 			//height: 1200px;
 			.content__vacancy-description {
 				font-family: RobotoRegular;
@@ -94,22 +105,20 @@ body {
 			.content__vacancy-requirement {
 				margin-top: 10px;
 				width: 100%;
+				text-align: center;
 				.content__vacancy-requirement_nav {
 					font-family: RobotoLight;
 					font-size: 1.6em;
 					margin-top: 10px;
-					width: 70%;
-					margin-left: 15%;
-					margin-right: 15%;
-					height: 40px;
+					height: 50px;
 
 					display: inline-block;
 					.content__vacancy-requirement_nav-tasks {
 						border-width: 1px;
 						border-style: solid;
 						border-radius: 5px 0 0 5px;
-						border-color: #008eda;
-						background-color: #008eda;
+						border-color: #2F8AC5;
+						background-color: #2F8AC5;
 						color: #fff;
 						text-align: center;
 						float: left;
@@ -123,9 +132,9 @@ body {
 						border-width: 1px;
 						border-style: solid;
 						border-radius: 0 5px 5px 0;
-						border-color: #008eda;
+						border-color: #2F8AC5;
 						background-color: #fff;
-						color: #008eda;
+						color: #2F8AC5;
 						text-align: center;
 						float: left;
 						height: 50px;
@@ -139,14 +148,13 @@ body {
 					& ul {
 						padding-top: 30px;
 						list-style-type: disc;
-						color: #008eda;
+						color: #2F8AC5;
 						padding-left: 20px;
 						font-size: 1.3em;
-						margin-bottom: 50px;
 						& li {
 							margin-bottom: 5px;
 							padding-left: 15px;
-
+							text-align: left;
 							span {
 								color: #3e3e3e;
 
@@ -161,11 +169,12 @@ body {
 
 			.content__vacancy-form {
 				width: 100%;
-				height: 585px;
+				height: 595px;
 				margin-bottom: 30px;
 				background-color: #f0f1f1;
 				text-align: center;
 				color: #3e3e3e;
+
 				.content__vacancy-form-hello {
 					font-family: RobotoBold;
 					font-size: 2.5em;
@@ -185,29 +194,31 @@ body {
 					border-color: #e3e3e3;
 					font-family: RobotoLight;
 					font-size: 1.3em;
-					margin: 15px;
+					margin: 15px 0;
 					padding-left: 30px;
 
 					&:focus {
-						border-color: #008eda;
+						border-color: #2F8AC5;
 						outline: none;
 					}
 				}
 
 				.content__vacancy-form-comment {
+					width: 90%;
+					margin: auto;
 					display: block;
 					text-align: right;
 					font-family: RobotoLight;
 					font-size: 1.3em;
-					padding-right: 40px;
+					margin-bottom: 20px;
 
 				}
 				.content__vacancy-form-send {
 					border-width: 1px;
 					border-style: solid;
 					border-radius: 5px;
-					border-color: #008eda;
-					background-color: #008eda;
+					border-color: #2F8AC5;
+					background-color: #2F8AC5;
 					color: #fff;
 					text-align: center;
 					float: left;
@@ -216,13 +227,37 @@ body {
 					font-family: RobotoLight;
 					font-size: 1.4em;
 					margin-left: 30px;
+					outline: none;
+
+
 				}
 			}
+		}
 
+		.photos {
+			width: 80%;
+			margin: auto;
+			img{
+				width: 100%;
+			}
+			.photos-mini{
+				text-align: center;
+				img{
+					width: 10%;
+					padding: 5px;
+					padding-top: 20px;
+				}
+
+			}
 		}
 
 		.footer {
+			height: 300px;
+			width: 100%;
+			background: url('../images/fon.png');
 
+			position: absolute;
+			background-size: cover;
 		}
 	}
 }
@@ -233,115 +268,68 @@ body {
 		background-repeat: repeat-y;
 
 		.wrapper {
-			height: 1800px;
+			//height: 1800px;
 			margin: 21px;
 			background: #fff;
-			padding-top: 10px;
 			.header {
-				width: auto;
 				height: 123px;
-				background: url('../images/city300.svg') repeat-x 40% top;
 				position: relative;
 				background-size: contain;
+				img{
+					width: 150px;
+					height: 45px;
+				}
 			}
 			.header__vacancy {
-				position: relative;
-				top: 0px;
 				width: 80%;
-				margin: auto;
-				font-family: RobotoBold;
-				color: #3e3e3e;
-				text-align: center;
 				padding-top: 0px;
 
 				.header__vacancy-name {
 					font-size: 2em;
-					margin-bottom: 10px;
 				}
 
 				.header__vacancy-skills {
-					font-size: 1.5em;
-					margin-bottom: 20px;
 				}
 
 				.header__vacancy-department {
-					font-family: RobotoRegular;
-					font-size: 1.3em;
 				}
 
 			}
 			.content {
 				width: 90%;
-				margin: auto;
 				padding-top: 40px;
 				position: relative;
 				top: 0px;
 				//height: 1200px;
 				.content__vacancy-description {
-					font-family: RobotoRegular;
-					color: #3e3e3e;
-					font-size: 1.4em;
+
 					.content__vacancy-description_paragraph {
-						margin-bottom: 20px;
 					}
 				}
 
 				.content__vacancy-requirement {
-					margin-top: 10px;
-					width: 100%;
 					.content__vacancy-requirement_nav {
-						font-family: RobotoLight;
-						margin-top: 10px;
-						width: 90%;
-						margin-left: 5%;
-						margin-right: 5%;
-						height: 40px;
-						font-size: 1.5em;
-						display: inline-block;
+						min-width: 300px;
+						font-size: 1.3em;
 						.content__vacancy-requirement_nav-tasks {
-							border-width: 1px;
-							border-style: solid;
-							border-radius: 5px 0 0 5px;
-							border-color: #008eda;
-							background-color: #008eda;
-							color: #fff;
-							text-align: center;
-							float: left;
-							height: 50px;
 							width: 49%;
-							padding-top: 15px;
+							height: 35px;
+							padding-top: 10px;
 						}
 
 						.content__vacancy-requirement_nav-requirements {
-
-							border-width: 1px;
-							border-style: solid;
-							border-radius: 0 5px 5px 0;
-							border-color: #008eda;
-							background-color: #fff;
-							color: #008eda;
-							text-align: center;
-							float: left;
-							height: 50px;
 							width: 49%;
-							padding-top: 15px;
+							height: 35px;
+							padding-top: 10px;
 						}
 					}
 
 					.content__vacancy-requirement-list {
 
 						& ul {
-							padding-top: 30px;
-							list-style-type: disc;
-							color: #008eda;
-							padding-left: 18px;
-							font-size: 1.3em;
+							padding-top: 5px;
 							& li {
-								margin-bottom: 5px;
 								span {
-									color: #3e3e3e;
-
-									line-height: 1.7em;
 								}
 							}
 						}
@@ -349,9 +337,36 @@ body {
 					}
 				}
 
+				.content__vacancy-form {
+					background-color: #fff;
+
+					.content__vacancy-form-hello {
+						font-size: 1.8em;
+						font-family: RobotoRegular;
+						padding-top: 20px;
+					}
+					input {
+
+						&:focus {
+						}
+					}
+
+					.content__vacancy-form-comment {
+						font-size: 0.8em;
+
+					}
+					.content__vacancy-form-send {
+						margin-left: 0;
+						float: inherit;
+
+					}
+				}
+			}
+			.photos {
+				display: none;
 			}
 			.footer {
-
+				display: none;
 			}
 		}
 	}
