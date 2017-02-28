@@ -41,12 +41,15 @@
 body {
 	margin: 0;
 	.wrapper {
+		padding-top: 10px;
 		.header {
 			height: 300px;
 			width: 100%;
 			background: url('../images/city300.svg') repeat-x 40% top;
-			margin-top: 10px;
+
 			position: absolute;
+			background-size: cover;
+
 		}
 		.header__vacancy {
 			position: relative;
@@ -159,6 +162,14 @@ body {
 	}
 }
 
+
+
+
+
+
+
+
+
 @media all and (max-width: 1050px) {
 	body {
 		background: url('../images/mobile-fon.png');
@@ -168,22 +179,23 @@ body {
 			height: 1800px;
 			margin: 21px;
 			background: #fff;
+			padding-top: 10px;
 			.header {
-				height: 300px;
-				width: 100%;
+				width: auto;
+				height: 123px;
 				background: url('../images/city300.svg') repeat-x 40% top;
-				margin-top: 10px;
-				position: absolute;
+				position: relative;
+				background-size: contain;
 			}
 			.header__vacancy {
 				position: relative;
-				top: 240px;
+				top: 0px;
 				width: 80%;
 				margin: auto;
 				font-family: RobotoBold;
 				color: #3e3e3e;
 				text-align: center;
-				padding-top: 70px;
+				padding-top: 0px;
 
 				.header__vacancy-name {
 					font-size: 2em;
@@ -206,7 +218,7 @@ body {
 				margin: auto;
 				padding-top: 40px;
 				position: relative;
-				top: 240px;
+				top: 0px;
 				//height: 1200px;
 				.content__vacancy-description {
 					font-family: RobotoRegular;
