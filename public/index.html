@@ -5,6 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>hr-desctop</title>
+	<script>
+
+		</script>
 </head>
 
 <body>
@@ -34,16 +37,22 @@
 
 		<div class="content__vacancy-requirement">
 			<div class="content__vacancy-requirement_nav">
-				<div class="content__vacancy-requirement_nav-tasks">Задачи</div>
-				<div class="content__vacancy-requirement_nav-requirements">Требования</div>
+				<div class="content__vacancy-requirement_nav-tab left-tab active-tab" id="Task-tab" onclick="tabChange(event, 'Task', 'Task-tab')">Задачи</div>
+				<div class="content__vacancy-requirement_nav-tab right-tab" id="Req-tab" onclick="tabChange(event, 'Req', 'Req-tab')">Требования</div>
 			</div>
 
-			<div class="content__vacancy-requirement-list">
+			<div class="content__vacancy-requirement-list active-list" id="Task">
 				<ul>
 					<li><span>Отвечать за реализацию продуктовых задач с примененнием машинного обучения</span></li>
 					<li><span>Генерировать идеи, проводить эксперименты и внедрять их в production</span></li>
-					<li><span>Следить за прогрессовм в машинном обучении и реализовывать подходящие алгоритмы</span>
-					</li>
+					<li><span>Следить за прогрессовм в машинном обучении и реализовывать подходящие алгоритмы</span></li>
+				</ul>
+			</div>
+
+			<div class="content__vacancy-requirement-list " id="Req">
+				<ul>
+					<li><span>Генерировать идеи, проводить эксперименты и внедрять их в production</span></li>
+					<li><span>Следить за прогрессовм в машинном обучении и реализовывать подходящие алгоритмы</span></li>
 				</ul>
 			</div>
 		</div>

@@ -50,11 +50,11 @@ body {
 			background-size: cover;
 			text-align: center;
 
-			img{
+			img {
 				margin: auto;
 
-					width: 300px;
-					height: 90px;
+				width: 300px;
+				height: 90px;
 			}
 
 		}
@@ -113,38 +113,34 @@ body {
 					height: 50px;
 
 					display: inline-block;
-					.content__vacancy-requirement_nav-tasks {
+					.content__vacancy-requirement_nav-tab {
 						border-width: 1px;
 						border-style: solid;
-						border-radius: 5px 0 0 5px;
-						border-color: #2F8AC5;
-						background-color: #2F8AC5;
-						color: #fff;
 						text-align: center;
 						float: left;
 						height: 50px;
 						width: 200px;
 						padding-top: 15px;
-					}
-
-					.content__vacancy-requirement_nav-requirements {
-
-						border-width: 1px;
-						border-style: solid;
-						border-radius: 0 5px 5px 0;
 						border-color: #2F8AC5;
 						background-color: #fff;
 						color: #2F8AC5;
-						text-align: center;
-						float: left;
-						height: 50px;
-						width: 200px;
-						padding-top: 15px;
 					}
+					.content__vacancy-requirement_nav-tab.left-tab {
+						border-radius: 5px 0 0 5px;
+					}
+					.content__vacancy-requirement_nav-tab.right-tab{
+						border-radius: 0 5px 5px 0;
+					}
+					.active-tab {
+						border-color: #2F8AC5;
+						background-color: #2F8AC5;
+						color: #fff;
+					}
+
 				}
 
-				.content__vacancy-requirement-list {
-
+				.content__vacancy-requirement-list.active-list {
+					display: block;
 					& ul {
 						padding-top: 30px;
 						list-style-type: disc;
@@ -164,7 +160,9 @@ body {
 					}
 
 				}
-
+				.content__vacancy-requirement-list {
+					display: none;
+				}
 			}
 
 			.content__vacancy-form {
@@ -229,7 +227,6 @@ body {
 					margin-left: 30px;
 					outline: none;
 
-
 				}
 			}
 		}
@@ -237,12 +234,12 @@ body {
 		.photos {
 			width: 80%;
 			margin: auto;
-			img{
+			img {
 				width: 100%;
 			}
-			.photos-mini{
+			.photos-mini {
 				text-align: center;
-				img{
+				img {
 					width: 10%;
 					padding: 5px;
 					padding-top: 20px;
@@ -275,7 +272,7 @@ body {
 				height: 123px;
 				position: relative;
 				background-size: contain;
-				img{
+				img {
 					width: 150px;
 					height: 45px;
 				}
