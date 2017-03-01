@@ -17,4 +17,13 @@ let tabChange = function (evt, name, tabname) {
 	document.getElementById(tabname).classList.add('active-tab');
 	document.getElementById(name).classList.add('active-list');
 }
+let photoChange = function (evt, id) {
 
+	let  i, photocontent;
+	photocontent = document.getElementsByClassName('photos_elem');
+	for (i = 0; i < photocontent.length; i++) {
+		photocontent[i].classList.remove('active');
+	}
+
+	document.getElementById(id).classList.add('active');
+}

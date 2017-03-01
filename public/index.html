@@ -6,20 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>hr-desctop</title>
 	<script>
-		let tabChange = function (evt, name, tabname) {
-			let  i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName('content__vacancy-requirement-list');
-			for (i = 0; i < 2; i++) {
-				tabcontent[i].classList.remove('active-list');
-			}
 
-			tablinks = document.getElementsByClassName('content__vacancy-requirement_nav-tab');
-			for (i = 0; i < 2; i++) {
-				tablinks[i].classList.remove('active-tab');
-			}
-			document.getElementById(tabname).classList.add('active-tab');
-			document.getElementById(name).classList.add('active-list');
-		}
+
 	</script>
 </head>
 
@@ -83,11 +71,15 @@
 
 	</div>
 	<div class="photos">
-		<img src="./public/images/prew/photo.png">
+		<img class="photos_elem active" id="Photo_0"src="./public/images/prew/photo.png">
+		<img class="photos_elem" id="Photo_1" src="./public/images/prew/prew-01.jpg">
+		<img class="photos_elem" id="Photo_2" src="./public/images/prew/prew-02.jpg">
+		<img class="photos_elem" id="Photo_3"src="./public/images/prew/prew-03.jpg">
 		<div class="photos-mini">
-			<img src="./public/images/prew/prew-01.jpg">
-			<img src="./public/images/prew/prew-02.jpg">
-			<img src="./public/images/prew/prew-03.jpg">
+			<img src="./public/images/prew/photo.png" onclick="photoChange(event, 'Photo_0')">
+			<img src="./public/images/prew/prew-01.jpg" onclick="photoChange(event, 'Photo_1')">
+			<img src="./public/images/prew/prew-02.jpg" onclick="photoChange(event, 'Photo_2')">
+			<img src="./public/images/prew/prew-03.jpg" onclick="photoChange(event, 'Photo_3')">
 		</div>
 	</div>
 	<div class="footer">

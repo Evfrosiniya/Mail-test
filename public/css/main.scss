@@ -234,9 +234,17 @@ body {
 		.photos {
 			width: 80%;
 			margin: auto;
-			img {
+			.photos_elem {
 				width: 100%;
+				display: none;
 			}
+
+			.photos_elem.active{
+				width: 100%;
+				display: block;
+			}
+
+
 			.photos-mini {
 				text-align: center;
 				img {
