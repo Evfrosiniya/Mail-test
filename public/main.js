@@ -4,7 +4,6 @@ import './css/main.scss';
 
 
 let tabChange = function (evt, name, tabname) {
-	console.log(this);
 	let  i, tabcontent, tablinks;
 	tabcontent = document.getElementsByClassName('content__vacancy-requirement-list');
 	for (i = 0; i < 2; i++) {
@@ -18,3 +17,4 @@ let tabChange = function (evt, name, tabname) {
 	document.getElementById(tabname).classList.add('active-tab');
 	document.getElementById(name).classList.add('active-list');
 }
+
