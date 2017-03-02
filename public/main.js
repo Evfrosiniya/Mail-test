@@ -33,13 +33,13 @@ window.photoChange = function (evt, id) {
 //button1.addEventListener('click', tabChange);
 //button2.addEventListener('click', photoChange);
 
-let tabList=document.getElementsByClassName('content__vacancy-requirement_nav-tab');
-for (let i = 0; i < tabList.length; i++) {
-	tabList.addEventListner('click', function (event) {
-		const click = event.target;
-		const uniqParam = click.getAttribute('data-uniq-param');
-		console.log(uniqParam);
-		tabChange()
-	});
-}
+// let tabList=document.getElementsByClassName('content__vacancy-requirement_nav-tab');
+// for (let i = 0; i < tabList.length; i++) {
+// 	tabList.addEventListner('click', function (event) {
+// 		const click = event.target;
+// 		const uniqParam = click.getAttribute('data-uniq-param');
+// 		console.log(uniqParam);
+// 		tabChange()
+// 	});
+// }
 
