@@ -3,7 +3,7 @@
 import './css/main.scss';
 
 
-window.tabChange = function (evt, name, tabname) {
+let tabChange = function (id,listid) {
 
 	let tabcontent = document.getElementsByClassName('content__vacancy-requirement-list');
 	for (let i = 0; i < 2; i++) {
@@ -14,32 +14,48 @@ window.tabChange = function (evt, name, tabname) {
 	for (let i = 0; i < 2; i++) {
 		tablinks[i].classList.remove('active-tab');
 	}
-	document.getElementById(tabname).classList.add('active-tab');
-	document.getElementById(name).classList.add('active-list');
-}
-window.photoChange = function (evt, id) {
-
-	let photocontent = document.getElementsByClassName('photos_elem');
-	for (let i = 0; i < photocontent.length; i++) {
-		photocontent[i].classList.remove('active');
-	}
-
-	document.getElementById(id).classList.add('active');
+	document.getElementById(id).classList.add('active-tab');
+	document.getElementById(listid).classList.add('active-list');
 }
 
-//let button1 = ...;
-//let button2 = ...;
 
-//button1.addEventListener('click', tabChange);
-//button2.addEventListener('click', photoChange);
+let tabList = document.getElementsByClassName('content__vacancy-requirement_nav-tab');
+for (let i = 0; i < tabList.length; i++) {
+	tabList[i].addEventListener('click', function (event) {
+		const click = event.target;
+		const uniqParam = click.getAttribute('data-uniq-param');
+		tabChange(uniqParam, uniqParam + '-list')
+	});
+}
 
-// let tabList=document.getElementsByClassName('content__vacancy-requirement_nav-tab');
-// for (let i = 0; i < tabList.length; i++) {
-// 	tabList.addEventListner('click', function (event) {
-// 		const click = event.target;
-// 		const uniqParam = click.getAttribute('data-uniq-param');
-// 		console.log(uniqParam);
-// 		tabChange()
-// 	});
-// }
+let width = document.getElementById('photos').offsetWidth;
 
+let lis = document.getElementsByClassName('photos_elem');
+for (let i = 0; i < lis.length; i++) {
+	lis[i].style.position = 'relative';
+	lis[i].style.width = width + 'px';
+	let span = document.createElement('span');
+	span.style.cssText = 'position:absolute;left:0;top:0';
+	span.innerHTML = i + 1;
+	lis[i].appendChild(span);
+
+
+}
+
+let miniLis = document.getElementsByClassName('photos-mini_elem');
+for (let i = 0; i < miniLis.length; i++) {
+	miniLis[i].id = i;
+}
+
+let position = 0;
+
+
+let photoList = document.getElementsByClassName('photos-mini_elem');
+for (let i = 0; i < photoList.length; i++) {
+	photoList[i].addEventListener('click', function (event) {
+
+		let count  = photoList[i].id;
+		position = width * Number(count);
+		document.getElementById('photos-ul').style.marginLeft = -position + 'px';
+	});
+}

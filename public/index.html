@@ -38,22 +38,28 @@
 
 		<div class="content__vacancy-requirement">
 			<div class="content__vacancy-requirement_nav">
-				<div class="content__vacancy-requirement_nav-tab left-tab active-tab" id="Task-tab" data-uniq-param="tasks">Задачи</div>
-				<div class="content__vacancy-requirement_nav-tab right-tab" id="Req-tab" data-uniq-param="requirements">Требования</div>
+				<div class="content__vacancy-requirement_nav-tab left-tab active-tab" id="tasks"
+				     data-uniq-param="tasks">Задачи
+				</div>
+				<div class="content__vacancy-requirement_nav-tab right-tab" id="requirements"
+				     data-uniq-param="requirements">Требования
+				</div>
 			</div>
 
-			<div class="content__vacancy-requirement-list active-list" id="Task">
+			<div class="content__vacancy-requirement-list active-list" id="tasks-list">
 				<ul>
 					<li><span>Отвечать за реализацию продуктовых задач с примененнием машинного обучения</span></li>
 					<li><span>Генерировать идеи, проводить эксперименты и внедрять их в production</span></li>
-					<li><span>Следить за прогрессовм в машинном обучении и реализовывать подходящие алгоритмы</span></li>
+					<li><span>Следить за прогрессовм в машинном обучении и реализовывать подходящие алгоритмы</span>
+					</li>
 				</ul>
 			</div>
 
-			<div class="content__vacancy-requirement-list " id="Req">
+			<div class="content__vacancy-requirement-list " id="requirements-list">
 				<ul>
 					<li><span>Генерировать идеи, проводить эксперименты и внедрять их в production</span></li>
-					<li><span>Следить за прогрессовм в машинном обучении и реализовывать подходящие алгоритмы</span></li>
+					<li><span>Следить за прогрессовм в машинном обучении и реализовывать подходящие алгоритмы</span>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -70,17 +76,33 @@
 
 
 	</div>
-	<div class="photos">
-		<img class="photos_elem active" id="Photo_0"src="./public/images/prew/photo.png">
-		<img class="photos_elem" id="Photo_1" src="./public/images/prew/prew-01.jpg">
-		<img class="photos_elem" id="Photo_2" src="./public/images/prew/prew-02.jpg">
-		<img class="photos_elem" id="Photo_3"src="./public/images/prew/prew-03.jpg">
-		<div class="photos-mini">
-			<img src="./public/images/prew/photo.png" onclick="photoChange(event, 'Photo_0')">
-			<img src="./public/images/prew/prew-01.jpg" onclick="photoChange(event, 'Photo_1')">
-			<img src="./public/images/prew/prew-02.jpg" onclick="photoChange(event, 'Photo_2')">
-			<img src="./public/images/prew/prew-03.jpg" onclick="photoChange(event, 'Photo_3')">
-		</div>
+	<div class="photos" id="photos">
+		<ul id="photos-ul">
+			<li>
+				<img class="photos_elem" id="Photo_0" src="./public/images/prew/photo.png">
+			</li>
+
+			<li>
+				<img class="photos_elem" id="Photo_1" src="./public/images/prew/photo.png">
+			</li>
+
+			<li>
+				<img class="photos_elem" id="Photo_2" src="./public/images/prew/photo.png">
+			</li>
+
+			<li>
+				<img class="photos_elem" id="Photo_3" src="./public/images/prew/photo.png">
+			</li>
+
+		</ul>
+
+	</div>
+	<div class="photos-mini">
+		<img class="photos-mini_elem" src="./public/images/prew/photo.png">
+		<img class="photos-mini_elem" src="./public/images/prew/photo.png">
+		<img class="photos-mini_elem" src="./public/images/prew/photo.png">
+		<img class="photos-mini_elem" src="./public/images/prew/photo.png">
+
 	</div>
 	<div class="footer">
 
