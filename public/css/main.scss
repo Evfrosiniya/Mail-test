@@ -248,6 +248,15 @@ body {
 				}
 
 			}
+			.content__vacancy-form-done {
+				display: none;
+				width: 100%;
+				height: 615px;
+				margin-bottom: 30px;
+				background-color: #f0f1f1;
+				text-align: center;
+				color: #3e3e3e;
+			}
 		}
 
 		.photos {
@@ -303,6 +312,8 @@ body {
 		}
 	}
 }
+
+
 
 @media all and (max-width: 1050px) {
 	body {

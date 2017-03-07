@@ -121,7 +121,13 @@ buttonSend.addEventListener('click', function (event) {
 		document.getElementsByTagName("input")[3].classList.remove('empty');
 	}
 	if (errorMessage.innerHTML === '') {
-		console.log('good');
+		if (screen.width > 1050) {
+			document.getElementsByClassName('content__vacancy-form')[0].style.display = 'none';
+			document.getElementsByClassName('content__vacancy-form-done')[0].style.display = 'block';
+		} else {
+			console.log('1000');
+		}
+
 	}
 
 	document.getElementById('error-text').appendChild(errorMessage);
