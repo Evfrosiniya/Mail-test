@@ -64,15 +64,18 @@
 			</div>
 		</div>
 
-		<div class="content__vacancy-form">
+		<form class="content__vacancy-form">
 			<span class="content__vacancy-form-hello">Давай знакомиться!</span>
 			<input type="text" placeholder="Имя*" class="content__vacancy-form_input-name">
 			<input type="text" placeholder="Фамилия*" class="content__vacancy-form_input-surname">
 			<input type="email" placeholder="E-mail*" class="content__vacancy-form_input-email">
 			<input type="tel" placeholder="Телефон" class="content__vacancy-form_input-phone">
 			<span class="content__vacancy-form-comment">* - обязательные поля</span>
-			<button class="content__vacancy-form-send">Отправить</button>
-		</div>
+			<div id="error-text">
+				<span id="error"></span>
+			</div>
+			<button type="submit" id="sendForm" class="content__vacancy-form-send">Отправить</button>
+		</form>
 
 
 	</div>
@@ -98,7 +101,7 @@
 
 	</div>
 	<div class="photos-mini">
-		<img class="photos-mini_elem" src="./public/images/prew/photo.png">
+		<img class="photos-mini_elem active-mini" src="./public/images/prew/photo.png">
 		<img class="photos-mini_elem" src="./public/images/prew/photo.png">
 		<img class="photos-mini_elem" src="./public/images/prew/photo.png">
 		<img class="photos-mini_elem" src="./public/images/prew/photo.png">
