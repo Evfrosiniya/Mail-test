@@ -110,12 +110,12 @@ buttonSend.addEventListener('click', function (event) {
 		document.getElementsByTagName("input")[2].classList.add('empty');
 		errorMessage.innerHTML = 'Заполните поля правильно!';
 	} else {
-		document.getElementsByTagName("input")[2].classList.remove('empty');
+		document.getElementsByTagName('input')[2].classList.remove('empty');
 	}
 
 	let regexp = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
 	if (formdata.tel.search(regexp) == -1) {
-		document.getElementsByTagName("input")[3].classList.add('empty');
+		document.getElementsByTagName('input')[3].classList.add('empty');
 		errorMessage.innerHTML = 'Заполните поля правильно!';
 	} else {
 		document.getElementsByTagName("input")[3].classList.remove('empty');
@@ -125,7 +125,26 @@ buttonSend.addEventListener('click', function (event) {
 			document.getElementsByClassName('content__vacancy-form')[0].style.display = 'none';
 			document.getElementsByClassName('content__vacancy-form-done')[0].style.display = 'block';
 		} else {
-			console.log('1000');
+			document.getElementsByClassName('header')[0].style.display = 'none';
+			document.getElementsByClassName('content')[0].style.display = 'none';
+			document.getElementsByClassName('wrapper')[0].style.background = 'transparent';
+			document.getElementsByClassName('header__vacancy')[0].style.color = '#ffffff';
+
+			let img = document.createElement('IMG');
+			img.src = '/public/images/ok.svg';
+			let span1 = document.createElement('span');
+			let span2 = document.createElement('span');
+			span1.innerHTML = 'Получилось!';
+			span2.innerHTML = 'Мы с вами скоро свяжемся!';
+
+			let footer = document.createElement('span');
+			footer.classList.add('footer-mobile');
+			footer.innerHTML = '© Mail.ru HR TEAM';
+			document.getElementById('vacancy-form-done-mobile').appendChild(img);
+			document.getElementById('vacancy-form-done-mobile').appendChild(span1);
+			document.getElementById('vacancy-form-done-mobile').appendChild(span2);
+			document.getElementById('vacancy-form-done-mobile').appendChild(footer);
+
 		}
 
 	}

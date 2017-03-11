@@ -40,388 +40,422 @@
 
 body {
 	margin: 0;
-	.wrapper {
-		padding-top: 10px;
-		.header {
-			height: 360px;
-			width: 100%;
-			background: url('../images/city300.svg') repeat-x 40% top;
-			position: absolute;
-			background-size: cover;
-			text-align: center;
+}
 
-			img {
-				margin: auto;
+.wrapper {
+	padding-top: 10px;
+}
 
-				width: 300px;
-				height: 90px;
-			}
+.header {
+	height: 360px;
+	width: 100%;
+	background: url('../images/city300.svg') repeat-x 40% top;
+	position: absolute;
+	background-size: cover;
+	text-align: center;
 
-		}
-		.header__vacancy {
-			position: relative;
-			width: 50%;
-			margin: auto;
-			font-family: RobotoBold;
-			color: #3e3e3e;
-			text-align: center;
-			padding-top: 70px;
+	img {
+		margin: auto;
 
-			.header__vacancy-logo {
+		width: 300px;
+		height: 90px;
+	}
 
-			}
+}
 
-			.header__vacancy-name {
-				font-size: 3em;
-				margin-bottom: 10px;
-			}
+.header__vacancy {
+	position: relative;
+	width: 50%;
+	margin: auto;
+	font-family: RobotoBold;
+	color: #3e3e3e;
+	text-align: center;
+	padding-top: 70px;
 
-			.header__vacancy-skills {
-				font-size: 1.5em;
-				margin-bottom: 20px;
-			}
+	&-logo {
 
-			.header__vacancy-department {
-				font-family: RobotoRegular;
-				font-size: 1.3em;
-			}
+	}
 
-		}
+	&-name {
+		font-size: 3em;
+		margin-bottom: 10px;
+	}
 
-		.content {
-			width: 60%;
-			margin: auto;
-			padding-top: 140px;
-			//height: 1200px;
-			.content__vacancy-description {
-				font-family: RobotoRegular;
-				color: #3e3e3e;
-				font-size: 1.4em;
-				.content__vacancy-description_paragraph {
-					margin-bottom: 20px;
-				}
-			}
+	&-skills {
+		font-size: 1.5em;
+		margin-bottom: 20px;
+	}
 
-			.content__vacancy-requirement {
-				margin-top: 10px;
-				width: 100%;
-				text-align: center;
-				.content__vacancy-requirement_nav {
-					font-family: RobotoLight;
-					font-size: 1.6em;
-					margin-top: 10px;
-					height: 50px;
+	&-department {
+		font-family: RobotoRegular;
+		font-size: 1.3em;
+	}
 
-					display: inline-block;
-					.content__vacancy-requirement_nav-tab {
-						border-width: 1px;
-						border-style: solid;
-						text-align: center;
-						float: left;
-						height: 50px;
-						width: 200px;
-						padding-top: 15px;
-						border-color: #2F8AC5;
-						background-color: #fff;
-						color: #2F8AC5;
-					}
-					.content__vacancy-requirement_nav-tab.left-tab {
-						border-radius: 5px 0 0 5px;
-					}
-					.content__vacancy-requirement_nav-tab.right-tab{
-						border-radius: 0 5px 5px 0;
-					}
-					.active-tab {
-						border-color: #2F8AC5;
-						background-color: #2F8AC5;
-						color: #fff;
-					}
+}
 
-				}
+.content {
+	width: 60%;
+	margin: auto;
+	padding-top: 140px;
+}
 
-				.content__vacancy-requirement-list.active-list {
-					display: block;
-					& ul {
-						padding-top: 30px;
-						list-style-type: disc;
-						color: #2F8AC5;
-						padding-left: 20px;
-						font-size: 1.3em;
-						& li {
-							margin-bottom: 5px;
-							padding-left: 15px;
-							text-align: left;
-							span {
-								color: #3e3e3e;
-
-								line-height: 1.7em;
-							}
-						}
-					}
-
-				}
-				.content__vacancy-requirement-list {
-					display: none;
-				}
-			}
-
-			.content__vacancy-form {
-				width: 100%;
-				height: 615px;
-				margin-bottom: 30px;
-				background-color: #f0f1f1;
-				text-align: center;
-				color: #3e3e3e;
-
-				.content__vacancy-form-hello {
-					font-family: RobotoBold;
-					font-size: 2.5em;
-
-					display: block;
-					padding-top: 40px;
-					padding-left: 37px;
-					text-align: left;
-					width: 85%;
-				}
-				input {
-					width: 85%;
-					height: 60px;
-					border-width: 2px;
-					border-style: solid;
-					border-radius: 5px;
-					border-color: #e3e3e3;
-					font-family: RobotoLight;
-					font-size: 1.3em;
-					margin: 15px 0;
-					padding-left: 30px;
-
-					&:focus {
-						border-color: #2F8AC5;
-						outline: none;
-					}
-				}
-
-				#error-text {
-					text-align: left;
-					width: 90%;
-					margin: auto;
-					color: #f55159;
-				}
-				#error {
-					font-family: RobotoLight;
-					font-size: 1.3em;
-
-				}
-
-
-
-				.content__vacancy-form-comment {
-					width: 90%;
-					margin: auto;
-					display: block;
-					text-align: right;
-					font-family: RobotoLight;
-					font-size: 1.3em;
-
-				}
-				.content__vacancy-form-send {
-					border-width: 1px;
-					border-style: solid;
-					border-radius: 5px;
-					border-color: #2F8AC5;
-					background-color: #2F8AC5;
-					color: #fff;
-					text-align: center;
-					float: left;
-					height: 50px;
-					width: 180px;
-					font-family: RobotoLight;
-					font-size: 1.4em;
-					margin-left: 30px;
-					outline: none;
-					margin-top: 10px;
-
-				}
-
-				.empty {
-					border-color: #f55159;
-				}
-
-			}
-			.content__vacancy-form-done {
-				display: none;
-				width: 100%;
-				height: 615px;
-				margin-bottom: 30px;
-				background-color: #f0f1f1;
-				text-align: center;
-				color: #3e3e3e;
-			}
-		}
-
-		.photos {
-			width: 1000px;
-			margin: auto;
-			overflow: hidden;
-			ul{
-				width: 9999px;
-				list-style: none;
-				transition: margin-left 250ms;
-				margin: 0;
-				padding: 0;
-				li {
-					display: inline-block;
-					padding: 0;
-					margin: -2px;
-					.photos_elem {
-						display: block;
-						width: 100%;
-					}
-				}
-			}
-
-
-		}
-
-		.photos-mini {
-			 text-align: center;
-			 img {
-				 width: 10%;
-				 padding: 5px;
-				 padding-top: 20px;
-				 background: rgba(205, 214, 219, 0.3);
-				 opacity: 0.5;
-
-
-			 }
-			 .active-mini {
-				opacity: 1;
-			}
-
-		 }
-
-
-
-		.footer {
-			height: 300px;
-			width: 100%;
-			background: url('../images/fon.png');
-
-			position: absolute;
-			background-size: cover;
-		}
+.content__vacancy-description {
+	font-family: RobotoRegular;
+	color: #3e3e3e;
+	font-size: 1.4em;
+	&_paragraph {
+		margin-bottom: 20px;
 	}
 }
 
+.content__vacancy-requirement {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
 
+	&_nav {
+		font-family: RobotoLight;
+		font-size: 1.6em;
+		margin-top: 10px;
+		height: 50px;
+		display: inline-block;
+	}
+
+	&_nav-tab {
+		border-width: 1px;
+		border-style: solid;
+		text-align: center;
+		float: left;
+		height: 50px;
+		width: 200px;
+		padding-top: 15px;
+		border-color: #2F8AC5;
+		background-color: #fff;
+		color: #2F8AC5;
+	}
+	&_nav-tab.left-tab {
+		border-radius: 5px 0 0 5px;
+	}
+	&_nav-tab.right-tab {
+		border-radius: 0 5px 5px 0;
+	}
+	.active-tab {
+		border-color: #2F8AC5;
+		background-color: #2F8AC5;
+		color: #fff;
+	}
+
+	&-list.active-list {
+		display: block;
+		& ul {
+			padding-top: 30px;
+			list-style-type: disc;
+			color: #2F8AC5;
+			padding-left: 20px;
+			font-size: 1.3em;
+			& li {
+				margin-bottom: 5px;
+				padding-left: 15px;
+				text-align: left;
+				span {
+					color: #3e3e3e;
+
+					line-height: 1.7em;
+				}
+			}
+		}
+
+	}
+	&-list {
+		display: none;
+	}
+}
+
+.content__vacancy-form {
+	width: 100%;
+	height: 615px;
+	margin-bottom: 30px;
+	background-color: #f0f1f1;
+	text-align: center;
+	color: #3e3e3e;
+
+	&-hello {
+		font-family: RobotoBold;
+		font-size: 2.5em;
+
+		display: block;
+		padding-top: 40px;
+		padding-left: 37px;
+		text-align: left;
+		width: 85%;
+	}
+	input {
+		width: 85%;
+		height: 60px;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 5px;
+		border-color: #e3e3e3;
+		font-family: RobotoLight;
+		font-size: 1.3em;
+		margin: 15px 0;
+		padding-left: 30px;
+
+		&:focus {
+			border-color: #2F8AC5;
+			outline: none;
+		}
+	}
+
+	#error-text {
+		text-align: left;
+		width: 90%;
+		margin: auto;
+		color: #f55159;
+	}
+	#error {
+		font-family: RobotoLight;
+		font-size: 1.3em;
+
+	}
+
+	.content__vacancy-form-comment {
+		width: 90%;
+		margin: auto;
+		display: block;
+		text-align: right;
+		font-family: RobotoLight;
+		font-size: 1.3em;
+
+	}
+	.content__vacancy-form-send {
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 5px;
+		border-color: #2F8AC5;
+		background-color: #2F8AC5;
+		color: #fff;
+		text-align: center;
+		float: left;
+		height: 50px;
+		width: 180px;
+		font-family: RobotoLight;
+		font-size: 1.4em;
+		margin-left: 30px;
+		outline: none;
+		margin-top: 10px;
+
+	}
+
+	.empty {
+		border-color: #f55159;
+	}
+
+}
+
+.content__vacancy-form-done {
+	display: none;
+	width: 100%;
+	background-color: #f0f1f1;
+	text-align: left;
+	color: #3e3e3e;
+
+	.upperText {
+		font-family: RobotoBold;
+		font-size: 2.5em;
+
+		display: block;
+		padding-top: 40px;
+		padding-left: 37px;
+		text-align: left;
+		width: 85%;
+	}
+
+	.lowerText {
+		font-family: RobotoRegular;
+		font-size: 1.4em;
+
+		display: block;
+		padding-left: 37px;
+		text-align: left;
+		width: 85%;
+	}
+}
+
+.photos {
+	width: 1000px;
+	margin: auto;
+	margin-top: 20px;
+	overflow: hidden;
+	ul {
+		width: 9999px;
+		list-style: none;
+		transition: margin-left 250ms;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			padding: 0;
+			margin: -2px;
+			.photos_elem {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+}
+
+.photos-mini {
+	text-align: center;
+	img {
+		width: 10%;
+		padding: 5px;
+		padding-top: 20px;
+		background: rgba(205, 214, 219, 0.3);
+		opacity: 0.5;
+
+	}
+	.active-mini {
+		opacity: 1;
+	}
+
+}
+
+.footer {
+	height: 200px;
+	width: 100%;
+	background: url('../images/fon.png');
+
+	position: absolute;
+	background-size: cover;
+	color: #ffffff;
+	text-align: center;
+	font-family: RobotoLight;
+	padding-top: 30px;
+	font-size: 1.5em;
+}
 
 @media all and (max-width: 1050px) {
 	body {
 		background: url('../images/mobile-fon.png');
 		background-repeat: repeat-y;
+	}
+	.wrapper {
+		margin: 21px;
+		background: #fff;
+	}
 
-		.wrapper {
-			//height: 1800px;
-			margin: 21px;
-			background: #fff;
-			.header {
-				height: 123px;
-				position: relative;
-				background-size: contain;
-				img {
-					width: 150px;
-					height: 45px;
-				}
-			}
-			.header__vacancy {
-				width: 80%;
-				padding-top: 0px;
+	.header {
+		height: 123px;
+		position: relative;
+		background-size: contain;
+		img {
+			width: 150px;
+			height: 45px;
+		}
+	}
+	.header__vacancy {
+		width: 80%;
+		padding-top: 0px;
 
-				.header__vacancy-name {
-					font-size: 2em;
-				}
+		&-name {
+			font-size: 2em;
+		}
 
-				.header__vacancy-skills {
-				}
+		&-skills {
+		}
 
-				.header__vacancy-department {
-				}
+		&-department {
+		}
 
-			}
-			.content {
-				width: 90%;
-				padding-top: 40px;
-				position: relative;
-				top: 0px;
-				//height: 1200px;
-				.content__vacancy-description {
+	}
 
-					.content__vacancy-description_paragraph {
-					}
-				}
+	.content {
+		width: 90%;
+		padding-top: 40px;
+		position: relative;
+		top: 0px;
+	}
 
-				.content__vacancy-requirement {
-					.content__vacancy-requirement_nav {
-						min-width: 300px;
-						font-size: 1.3em;
-						.content__vacancy-requirement_nav-tasks {
-							width: 49%;
-							height: 35px;
-							padding-top: 10px;
-						}
+	.content__vacancy-description {
 
-						.content__vacancy-requirement_nav-requirements {
-							width: 49%;
-							height: 35px;
-							padding-top: 10px;
-						}
-					}
+		&_paragraph {
+		}
+	}
 
-					.content__vacancy-requirement-list {
-
-						& ul {
-							padding-top: 5px;
-							& li {
-								span {
-								}
-							}
-						}
-
-					}
-				}
-
-				.content__vacancy-form {
-					background-color: #fff;
-
-					.content__vacancy-form-hello {
-						font-size: 1.8em;
-						font-family: RobotoRegular;
-						padding-top: 20px;
-					}
-					input {
-
-						&:focus {
-						}
-					}
-
-					.content__vacancy-form-comment {
-						font-size: 0.8em;
-
-					}
-					.content__vacancy-form-send {
-						margin-left: 0;
-						float: inherit;
-
-					}
-				}
-			}
-			.photos, .photos-mini {
-				display: none;
+	.content__vacancy-requirement {
+		&_nav {
+			min-width: 300px;
+			font-size: 1.3em;
+			&-tasks {
+				width: 49%;
+				height: 35px;
+				padding-top: 10px;
 			}
 
-			.footer {
-				display: none;
+			&-requirements {
+				width: 49%;
+				height: 35px;
+				padding-top: 10px;
 			}
 		}
+
+		&-list {
+
+			& ul {
+				padding-top: 5px;
+				& li {
+					span {
+					}
+				}
+			}
+
+		}
+	}
+
+	.content__vacancy-form {
+		background-color: #fff;
+
+		&-hello {
+			font-size: 1.8em;
+			font-family: RobotoRegular;
+			padding-top: 20px;
+		}
+		input {
+
+			&:focus {
+			}
+		}
+
+		&-comment {
+			font-size: 0.8em;
+
+		}
+		&-send {
+			margin-left: 0;
+			float: inherit;
+
+		}
+	}
+
+	#vacancy-form-done-mobile span {
+		text-align: center;
+		color: #ffffff;
+		font-size: 2em;
+		display: block;
+	}
+
+	.footer-mobile {
+		font-family: RobotoLight;
+		font-size: 0.8em !important;
+		margin-top: 100px;
+	}
+	.photos, .photos-mini {
+		display: none;
+	}
+
+	.footer {
+		display: none;
 	}
 }
