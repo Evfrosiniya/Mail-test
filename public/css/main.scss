@@ -51,7 +51,7 @@ body {
 	width: 100%;
 	background: url('../images/city300.svg') repeat-x 40% top;
 	position: absolute;
-	background-size: cover;
+	background-size: contain;
 	text-align: center;
 
 	img {
@@ -66,29 +66,31 @@ body {
 .header__vacancy {
 	position: relative;
 	width: 50%;
+	//height: 290px;
 	margin: auto;
 	font-family: RobotoBold;
 	color: #3e3e3e;
 	text-align: center;
 	padding-top: 70px;
+	padding-bottom: 80px;
 
 	&-logo {
 
 	}
 
 	&-name {
-		font-size: 3em;
+		font-size: 3vw;
 		margin-bottom: 10px;
 	}
 
 	&-skills {
-		font-size: 1.5em;
+		font-size: 2vw;
 		margin-bottom: 20px;
 	}
 
 	&-department {
 		font-family: RobotoRegular;
-		font-size: 1.3em;
+		font-size: 2vw;
 	}
 
 }
@@ -96,7 +98,7 @@ body {
 .content {
 	width: 60%;
 	margin: auto;
-	padding-top: 140px;
+	//padding-top: 140px;
 }
 
 .content__vacancy-description {
@@ -219,7 +221,7 @@ body {
 
 	}
 
-	.content__vacancy-form-comment {
+	&-comment {
 		width: 90%;
 		margin: auto;
 		display: block;
@@ -228,7 +230,7 @@ body {
 		font-size: 1.3em;
 
 	}
-	.content__vacancy-form-send {
+	&-send {
 		border-width: 1px;
 		border-style: solid;
 		border-radius: 5px;
@@ -358,15 +360,18 @@ body {
 	.header__vacancy {
 		width: 80%;
 		padding-top: 0px;
+		padding-bottom: 0px;
 
 		&-name {
 			font-size: 2em;
 		}
 
 		&-skills {
+			font-size: 1.2em;
 		}
 
 		&-department {
+			font-size: 1.2em;
 		}
 
 	}
@@ -386,25 +391,33 @@ body {
 
 	.content__vacancy-requirement {
 		&_nav {
-			min-width: 300px;
-			font-size: 1.3em;
-			&-tasks {
+			min-width: 250px;
+			font-size: 1.2em;
+
+			&-tab {
 				width: 49%;
 				height: 35px;
 				padding-top: 10px;
 			}
 
-			&-requirements {
-				width: 49%;
-				height: 35px;
-				padding-top: 10px;
+		}
+
+		&-list.active-list {
+			& ul {
+				padding-top: 0px;
+				& li {
+
+					span {
+					}
+				}
 			}
+
 		}
 
 		&-list {
 
 			& ul {
-				padding-top: 5px;
+				padding-top: 0px;
 				& li {
 					span {
 					}
@@ -418,9 +431,14 @@ body {
 		background-color: #fff;
 
 		&-hello {
-			font-size: 1.8em;
 			font-family: RobotoRegular;
-			padding-top: 20px;
+			font-size: 1.7em;
+
+			display: block;
+			text-align: center;
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		input {
 
@@ -435,7 +453,6 @@ body {
 		&-send {
 			margin-left: 0;
 			float: inherit;
-
 		}
 	}
 
