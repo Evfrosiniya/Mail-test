@@ -49,10 +49,11 @@ body {
 .header {
 	height: 360px;
 	width: 100%;
-	background: url('../images/city300.svg') repeat-x 40% top;
+	background: url('../images/city.svg') repeat-x 40% top;
 	position: absolute;
 	background-size: contain;
 	text-align: center;
+	opacity: 0.8;
 
 	img {
 		margin: auto;
@@ -66,7 +67,7 @@ body {
 .header__vacancy {
 	position: relative;
 	width: 50%;
-	//height: 290px;
+	height: 210px;
 	margin: auto;
 	font-family: RobotoBold;
 	color: #3e3e3e;
@@ -98,7 +99,7 @@ body {
 .content {
 	width: 60%;
 	margin: auto;
-	//padding-top: 140px;
+	padding-top: 40px;
 }
 
 .content__vacancy-description {
@@ -378,9 +379,9 @@ body {
 
 	.content {
 		width: 90%;
-		padding-top: 40px;
 		position: relative;
 		top: 0px;
+		padding-top: 0;
 	}
 
 	.content__vacancy-description {
@@ -459,13 +460,13 @@ body {
 	#vacancy-form-done-mobile span {
 		text-align: center;
 		color: #ffffff;
-		font-size: 2em;
+		font-size: 7vw;
 		display: block;
 	}
 
 	.footer-mobile {
 		font-family: RobotoLight;
-		font-size: 0.8em !important;
+		font-size: 3vw !important;
 		margin-top: 100px;
 	}
 	.photos, .photos-mini {
