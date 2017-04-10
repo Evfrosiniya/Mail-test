@@ -123,7 +123,7 @@ buttonSend.addEventListener('click', function (event) {
 			document.getElementsByClassName('content__vacancy-form')[0].style.display = 'none';
 			document.getElementsByClassName('content__vacancy-form-done')[0].style.display = 'block';
 		} else {
-			document.getElementsByClassName('header')[0].style.display = 'none';
+			document.getElementsByClassName('header__background')[0].style.display = 'none';
 			document.getElementsByClassName('content')[0].style.display = 'none';
 			document.getElementsByClassName('wrapper')[0].style.background = 'transparent';
 			document.getElementsByClassName('header__vacancy')[0].style.color = '#ffffff';
@@ -152,3 +152,5 @@ buttonSend.addEventListener('click', function (event) {
 	document.getElementById('error-text').appendChild(errorMessage);
 
 });
+
+

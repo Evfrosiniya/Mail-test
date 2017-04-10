@@ -46,8 +46,8 @@ body {
 	padding-top: 10px;
 }
 
-.header {
-	height: 360px;
+.header__background {
+	height: 25vw;
 	width: 100%;
 	background: url('../images/city.svg') repeat-x 40% top;
 	position: absolute;
@@ -57,9 +57,7 @@ body {
 
 	img {
 		margin: auto;
-
-		width: 300px;
-		height: 90px;
+		height: 6vw;
 	}
 
 }
@@ -67,12 +65,11 @@ body {
 .header__vacancy {
 	position: relative;
 	width: 50%;
-	height: 210px;
 	margin: auto;
 	font-family: RobotoBold;
 	color: #3e3e3e;
 	text-align: center;
-	padding-top: 70px;
+	padding-top: 4vw;
 	padding-bottom: 80px;
 
 	&-logo {
@@ -80,7 +77,7 @@ body {
 	}
 
 	&-name {
-		font-size: 3vw;
+		font-size: 3.7vw;
 		margin-bottom: 10px;
 	}
 
@@ -98,8 +95,9 @@ body {
 
 .content {
 	width: 60%;
+	max-width: 1000px;
 	margin: auto;
-	padding-top: 40px;
+	padding-top: 4vw;
 }
 
 .content__vacancy-description {
@@ -135,6 +133,7 @@ body {
 		border-color: #2F8AC5;
 		background-color: #fff;
 		color: #2F8AC5;
+		cursor: pointer;
 	}
 	&_nav-tab.left-tab {
 		border-radius: 5px 0 0 5px;
@@ -146,11 +145,13 @@ body {
 		border-color: #2F8AC5;
 		background-color: #2F8AC5;
 		color: #fff;
+		cursor:default;
 	}
 
 	&-list.active-list {
 		display: block;
 		& ul {
+			font-family: RobotoMedium;
 			padding-top: 30px;
 			list-style-type: disc;
 			color: #2F8AC5;
@@ -181,19 +182,21 @@ body {
 	background-color: #f0f1f1;
 	text-align: center;
 	color: #3e3e3e;
-
+	&-wrapper {
+		width: 85%;
+		margin: auto;
+	}
 	&-hello {
 		font-family: RobotoBold;
 		font-size: 2.5em;
 
 		display: block;
 		padding-top: 40px;
-		padding-left: 37px;
 		text-align: left;
 		width: 85%;
 	}
 	input {
-		width: 85%;
+		width: 100%;
 		height: 60px;
 		border-width: 2px;
 		border-style: solid;
@@ -202,7 +205,6 @@ body {
 		font-family: RobotoLight;
 		font-size: 1.3em;
 		margin: 15px 0;
-		padding-left: 30px;
 
 		&:focus {
 			border-color: #2F8AC5;
@@ -223,7 +225,7 @@ body {
 	}
 
 	&-comment {
-		width: 90%;
+		width: 100%;
 		margin: auto;
 		display: block;
 		text-align: right;
@@ -244,7 +246,6 @@ body {
 		width: 180px;
 		font-family: RobotoLight;
 		font-size: 1.4em;
-		margin-left: 30px;
 		outline: none;
 		margin-top: 10px;
 
@@ -262,27 +263,26 @@ body {
 	background-color: #f0f1f1;
 	text-align: left;
 	color: #3e3e3e;
+}
+.content__vacancy-form-done_upperText {
+	font-family: RobotoBold;
+	font-size: 2.5em;
 
-	.upperText {
-		font-family: RobotoBold;
-		font-size: 2.5em;
+	display: block;
+	padding-top: 40px;
+	padding-left: 37px;
+	text-align: left;
+	width: 85%;
+}
 
-		display: block;
-		padding-top: 40px;
-		padding-left: 37px;
-		text-align: left;
-		width: 85%;
-	}
+.content__vacancy-form-done_lowerText {
+	font-family: RobotoRegular;
+	font-size: 1.4em;
 
-	.lowerText {
-		font-family: RobotoRegular;
-		font-size: 1.4em;
-
-		display: block;
-		padding-left: 37px;
-		text-align: left;
-		width: 85%;
-	}
+	display: block;
+	padding-left: 37px;
+	text-align: left;
+	width: 85%;
 }
 
 .photos {
@@ -339,6 +339,7 @@ body {
 	font-size: 1.5em;
 }
 
+
 @media all and (max-width: 1050px) {
 	body {
 		background: url('../images/mobile-fon.png');
@@ -349,7 +350,7 @@ body {
 		background: #fff;
 	}
 
-	.header {
+	.header__background {
 		height: 123px;
 		position: relative;
 		background-size: contain;

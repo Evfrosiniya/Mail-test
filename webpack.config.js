@@ -55,11 +55,11 @@ module.exports = {
 			debug: true,
 			postcss: [precss, autoprefixer]
 		}),
-		new webpack.NoErrorsPlugin(),
 		new HtmlPlugin({
 			filename: 'index.html',
 			template: path.resolve(__dirname, 'public/index.html')
 		}),
-		new ExtractTextPlugin(path.join('css', '[name].bundle.[hash].css'))
+		new ExtractTextPlugin(path.join('css', '[name].bundle.[hash].css')),
+
 	]
 };

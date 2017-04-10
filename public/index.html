@@ -9,12 +9,14 @@
 
 <body>
 <div class="wrapper">
-	<div class="header"><img src="/public/images/logos.svg"></div>
-	<div class="header__vacancy">
+	<div class="header">
+		<div class="header__background"><img src="/public/images/logos.svg"></div>
+		<div class="header__vacancy">
 
-		<div class="header__vacancy-name">Программист-исследователь</div>
-		<div class="header__vacancy-skills">Data Scientist (Machine Learning)</div>
-		<div class="header__vacancy-department">Почта и портал, Почта</div>
+			<div class="header__vacancy-name">Программист-исследователь</div>
+			<div class="header__vacancy-skills">Data Scientist (Machine Learning)</div>
+			<div class="header__vacancy-department">Почта и портал, Почта</div>
+		</div>
 	</div>
 	<div class="content">
 
@@ -61,30 +63,32 @@
 		</div>
 
 		<form class="content__vacancy-form">
-			<span class="content__vacancy-form-hello">Давай знакомиться!</span>
-			<input type="text" placeholder="Имя*" class="content__vacancy-form_input-name">
-			<input type="text" placeholder="Фамилия*" class="content__vacancy-form_input-surname">
-			<input type="email" placeholder="E-mail*" class="content__vacancy-form_input-email">
-			<input type="tel" placeholder="Телефон" class="content__vacancy-form_input-phone">
-			<span class="content__vacancy-form-comment">* - обязательные поля</span>
-			<div id="error-text">
-				<span id="error"></span>
+			<div class="content__vacancy-form-wrapper">
+				<span class="content__vacancy-form-hello">Давай знакомиться!</span>
+
+				<input type="text" placeholder="Имя*" class="content__vacancy-form_input-name">
+				<input type="text" placeholder="Фамилия*" class="content__vacancy-form_input-surname">
+				<input type="email" placeholder="E-mail*" class="content__vacancy-form_input-email">
+				<input type="tel" placeholder="Телефон" class="content__vacancy-form_input-phone">
+				<span class="content__vacancy-form-comment">* - обязательные поля</span>
+
+				<div id="error-text">
+					<span id="error"></span>
+				</div>
+				<button type="submit" id="sendForm" class="content__vacancy-form-send">Отправить</button>
 			</div>
-			<button type="submit" id="sendForm" class="content__vacancy-form-send">Отправить</button>
 		</form>
 
 		<div class="content__vacancy-form-done">
-			<span class="content__vacancy-form-done upperText">Получилось!</span>
-			<span class="content__vacancy-form-done lowerText">Мы скоро выйдем на связь.</span>
+			<span class="content__vacancy-form-done content__vacancy-form-done_upperText">Получилось!</span>
+			<span class="content__vacancy-form-done content__vacancy-form-done_lowerText">Мы скоро выйдем на связь.</span>
 			<img src="./public/images/ok.svg">
 		</div>
 
 
 	</div>
 
-	<div id="vacancy-form-done-mobile">
-
-	</div>
+	<div id="vacancy-form-done-mobile"></div>
 	<div class="photos" id="photos">
 		<ul id="photos-ul">
 			<li>
@@ -114,7 +118,8 @@
 
 	</div>
 	<div class="footer">
-		<span>© Mail.ru HR TEAM</span>
+		<p>© Mail.ru HR TEAM</p>
+		<img class="social-networks" src="./public/images/sn.png">
 	</div>
 </div>
 
